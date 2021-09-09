@@ -218,7 +218,7 @@ public class ElementTest extends ViewTest {
 
     public void testSelected(boolean expected) {
         String msg = msgHeader + "Element checked/selected value is not suitable\n";
-        if (component.getClass().equals(androidx.appcompat.widget.AppCompatCheckBox.class)) {
+        if (component.getClass().equals(com.google.android.material.checkbox.MaterialCheckBox.class)) {
             testItem(expected,((CheckBox)component).isChecked(),msg,1);
         } else {
             testItem(expected,((RadioButton)component).isChecked(),msg,1);
